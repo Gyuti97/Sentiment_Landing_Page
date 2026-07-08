@@ -1,0 +1,6 @@
+{
+  "name": "Sentiment Tattoo Studio",
+  "description": "A single-page landing page for a luxury tattoo studio, designed with a quiet, elegant, and minimalist aesthetic to convey craftsmanship, sensitivity, and taste.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
