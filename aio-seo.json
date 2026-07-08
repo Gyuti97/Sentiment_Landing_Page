@@ -1,0 +1,80 @@
+{
+  "$schema": "https://aioseo.com/schemas/settings/v1/settings.json",
+  "plugin": "All in One SEO / AIO SEO Optimization Config",
+  "version": "4.6.2",
+  "globalSettings": {
+    "siteTitle": "Sentiment Tattoo Studio | Fine Line & Custom Tattoos in Győr",
+    "metaDescription": "Sentiment Tattoo Studio by Regina Árvai in Győr, Hungary. Elegant, minimalist, fine line, and custom tattoos with personal sentiment and taste. Start a conversation and create art.",
+    "separator": "|",
+    "schemaType": "LocalBusiness",
+    "localBusiness": {
+      "businessType": "ProfessionalService",
+      "name": "Sentiment Tattoo Studio",
+      "image": "https://sentiment.hu/assets/gallery/finished_tattoos/3.webp",
+      "telephone": "+36203229497",
+      "email": "info@sentiment.hu",
+      "priceRange": "HUF (18,000+ HUF)",
+      "address": {
+        "streetAddress": "József Attila utca 99",
+        "addressLocality": "Győr",
+        "postalCode": "9028",
+        "addressCountry": "HU"
+      },
+      "geo": {
+        "latitude": "47.6685",
+        "longitude": "17.6534"
+      },
+      "openingHours": "Mo-Fr 09:00-17:00"
+    }
+  },
+  "contentTypes": {
+    "homepage": {
+      "title": "Sentiment Tattoo Studio | Ink as Intimate as Memory",
+      "description": "Premium luxury tattoo experience. Specializing in delicate fine line shading and custom designs by Regina Árvai in Győr, Hungary. Timeless art on skin.",
+      "keywords": ["tattoo studio győr", "fine line tattoo hungary", "regina arvai tattoo", "sentiment tattoo", "custom tattoo design", "luxury tattoo studio győr", "győr tetoválás", "finomvonalas tetoválás"]
+    },
+    "about": {
+      "title": "About Regina Árvai | Sentiment Tattoo Studio",
+      "description": "Meet Regina Árvai, the artist behind Sentiment. Learn about her unique approach to translating personal stories and emotions into delicate fine line tattoos.",
+      "keywords": ["regina arvai", "tattoo artist győr", "fineline artist hungary", "sentiment tattoo founder", "győr tetováló művész"]
+    },
+    "gallery": {
+      "title": "Tattoo Gallery & Available Flash | Sentiment",
+      "description": "Explore the portfolio of delicate custom tattoos and discover currently available exclusive flash designs by Regina Árvai. Book your favorite design.",
+      "keywords": ["tattoo portfolio győr", "available tattoo flash", "fine line gallery", "tattoo designs hungary", "sentiment tattoo flash"]
+    },
+    "booking": {
+      "title": "Booking Inquiry & Consultations | Sentiment",
+      "description": "Initiate your tattoo journey. Submit your ideas, references, and design wishes directly to schedule a custom session or design consultation with Regina Árvai.",
+      "keywords": ["book tattoo győr", "tattoo booking hungary", "regina arvai booking", "tattoo consultation"]
+    },
+    "info": {
+      "title": "Booking Info, Pricing & Studio Policies | Sentiment",
+      "description": "Essential studio guidelines. Learn about our booking deposits, general pricing for minis and large tattoos, custom design consultations, and studio policies.",
+      "keywords": ["tattoo pricing győr", "tattoo deposit", "fine line fading", "studio policies", "tetoválás árak győr"]
+    }
+  },
+  "socialMeta": {
+    "facebook": {
+      "enabled": true,
+      "pageUrl": "https://www.facebook.com/profile.php?id=61567471132497",
+      "defaultImage": "https://sentiment.hu/assets/gallery/finished_tattoos/3.webp"
+    },
+    "instagram": {
+      "enabled": true,
+      "profileUrl": "https://www.instagram.com/clubsentiment/"
+    }
+  },
+  "advanced": {
+    "crawling": {
+      "googlebot": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "bingbot": "index, follow",
+      "yandex": "index, follow"
+    },
+    "speedOptimization": {
+      "preloadKeyFonts": true,
+      "lazyLoadImages": true,
+      "minimizeRenderBlocking": true
+    }
+  }
+}

@@ -13,6 +13,7 @@ import Info from './components/Info';
 import Booking from './components/Booking';
 import About from './components/About';
 import Gallery from './components/Gallery';
+import SEO from './components/SEO';
 
 // Import local WebP gallery pictures
 import gallery1 from './assets/gallery/finished_tattoos/1.webp';
@@ -477,6 +478,7 @@ const App: React.FC = () => {
 
   return (
     <div className="bg-off-white font-sans text-charcoal overflow-x-clip min-h-screen flex flex-col justify-between">
+      <SEO page={page} language={language} />
       <Header 
         navigate={navigate} 
         content={currentContent.header} 

@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Host
+Host: https://sentiment.hu
+
+# Sitemaps
+Sitemap: https://sentiment.hu/sitemap.xml
