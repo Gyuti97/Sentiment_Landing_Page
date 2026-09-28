@@ -111,7 +111,7 @@ const SEO: React.FC<SEOProps> = ({ page, language }) => {
       'og:description': descriptionText,
       'og:url': canonicalUrl,
       'og:type': 'website',
-      'og:image': 'https://sentiment.hu/assets/gallery/finished_tattoos/3.webp',
+      'og:image': 'https://sentiment.hu/social-preview.webp',
       'og:site_name': 'Sentiment Tattoo Studio',
       'og:locale': language === 'hu' ? 'hu_HU' : 'en_US'
     };
@@ -131,7 +131,7 @@ const SEO: React.FC<SEOProps> = ({ page, language }) => {
       'twitter:card': 'summary_large_image',
       'twitter:title': titleText,
       'twitter:description': descriptionText,
-      'twitter:image': 'https://sentiment.hu/assets/gallery/finished_tattoos/3.webp'
+      'twitter:image': 'https://sentiment.hu/social-preview.webp'
     };
 
     Object.entries(twitterTags).forEach(([name, content]) => {
@@ -144,7 +144,6 @@ const SEO: React.FC<SEOProps> = ({ page, language }) => {
       twitterMeta.setAttribute('content', content);
     });
 
-    // 9. Inject JSON-LD Schema.org Structured Data Markup (Massive SEO rating win)
     const structuredData = {
       '@context': 'https://schema.org',
       '@type': 'ProfessionalService',
@@ -152,7 +151,7 @@ const SEO: React.FC<SEOProps> = ({ page, language }) => {
       'alternateName': 'Sentiment Tattoo & Art',
       'url': 'https://sentiment.hu',
       'logo': 'https://sentiment.hu/favicon.svg',
-      'image': 'https://sentiment.hu/assets/gallery/finished_tattoos/3.webp',
+      'image': 'https://sentiment.hu/social-preview.webp',
       'description': descriptionText,
       'telephone': '+36203229497',
       'email': 'info@sentiment.hu',
@@ -168,18 +167,6 @@ const SEO: React.FC<SEOProps> = ({ page, language }) => {
         '@type': 'GeoCoordinates',
         'latitude': 47.6685,
         'longitude': 17.6534
-      },
-      'openingHoursSpecification': {
-        '@type': 'OpeningHoursSpecification',
-        'dayOfWeek': [
-          'Monday',
-          'Tuesday',
-          'Wednesday',
-          'Thursday',
-          'Friday'
-        ],
-        'opens': '09:00',
-        'closes': '17:00'
       },
       'sameAs': [
         'https://www.instagram.com/clubsentiment/',
@@ -201,13 +188,9 @@ const SEO: React.FC<SEOProps> = ({ page, language }) => {
     }
     schemaScript.textContent = JSON.stringify(structuredData);
 
-    // Clean up if component is updated
-    return () => {
-      // Optional: keep it simple and clean, no need to tear down since next render updates it
-    };
   }, [page, language]);
 
-  return null; // This component has no visual output; it purely works on metadata
+  return null;
 };
 
 export default SEO;
