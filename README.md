@@ -1,20 +1,20 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Sentiment Tattoo Studio
 
-# Run and deploy your AI Studio app
+Static React/Vite landing page for Sentiment Tattoo Studio, deployed to GitHub Pages at https://sentiment.hu.
 
-This contains everything you need to run your app locally.
+## Local development
 
-View your app in AI Studio: https://ai.studio/apps/f4c5a0d1-05f8-4acd-8c5e-cbd23fad6c32
+```bash
+npm ci
+npm run dev
+```
 
-## Run Locally
+## Checks
 
-**Prerequisites:**  Node.js
+```bash
+npm run lint
+npm test
+npm run build
+```
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+The production build also generates real `/booking`, `/info`, `/about`, and `/gallery` entry points for GitHub Pages. Static assets are cached by a service worker, while page navigations remain network-first so deployments update promptly.
