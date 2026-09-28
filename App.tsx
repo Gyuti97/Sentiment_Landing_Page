@@ -39,13 +39,6 @@ const PageTransition: React.FC<{ children: React.ReactNode; pageKey: string }> =
   );
 };
 
-/**
- * HOW TO CHANGE PICTURES:
- * 1. Find the section you want to update (e.g., philosophy, about, gallery).
- * 2. Replace the 'url' or 'image' string with your own image link.
- * 3. You can use services like postimg.cc or imgur.com to host your pictures.
- */
-
 const content = {
   en: {
     header: {
@@ -302,7 +295,7 @@ const content = {
       title: 'FOGLALÁSI AJÁNLATKÉRÉS',
       body: 'Köszönöm érdeklődésedet, hogy velem szeretnél alkotni. Kérlek, töltsd ki az alábbi űrlapot a lehető legrészletesebben. Ez a közös folyamatunk első lépése. Az ajánlatkéréseket időszakosan bírálom el, és 5-7 munkanapon belül válaszolok, ha a projekt illeszkedik a művészi irányzatomhoz.',
       buttonText: 'Töltsd ki az űrlapot a kapcsolatfelvételhez',
-      formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSfrAmnBiQ6C4_2Vpj1rmJWTSZanVBizE9F1T7fBcBChyhKuSw/viewform?embedded=true' // IMPORTANT: Replace with your Hungarian Google Form URL
+      formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSfrAmnBiQ6C4_2Vpj1rmJWTSZanVBizE9F1T7fBcBChyhKuSw/viewform?embedded=true'
     },
     about: {
       tag: 'Ismerd meg a művészt: Árvai Regina',
