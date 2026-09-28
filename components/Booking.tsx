@@ -1,5 +1,4 @@
 
-// Rebuild trigger
 import React from 'react';
 
 interface BookingProps {
@@ -18,7 +17,6 @@ const Booking: React.FC<BookingProps> = ({ content }) => {
       id="booking" 
       className="relative text-charcoal overflow-hidden min-h-[90vh] flex items-center py-24 md:py-36"
     >
-      {/* Targeted element: Main page blue background */}
       <div className="absolute inset-0 bg-forest-green z-0"></div>
       
       <div className="relative z-10 container mx-auto px-6 text-center max-w-3xl">
